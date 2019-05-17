@@ -1,0 +1,305 @@
+* {
+  text-decoration: none;
+  font-family: brandon-grotesque, sans-serif;
+}
+
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: .01fr .05fr .05fr .75fr;
+      grid-template-rows: .01fr .05fr .05fr .75fr;
+}
+
+h3.mva__title {
+  position: relative;
+  z-index: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1/5;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  text-align: center;
+}
+
+h3.mva__title:before {
+  border-top: 2px solid black;
+  content: "";
+  margin: 0 auto;
+  /* this centers the line to the full width specified */
+  position: absolute;
+  /* positioning must be absolute here, and relative positioning must be applied to the parent */
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 75vw;
+  z-index: -1;
+}
+
+h3.mva__title span {
+  /* to hide the lines from behind the text, you have to set the background color the same as the container */
+  background: white;
+  padding: 0 15px;
+  font-size: 160%;
+}
+
+.mva__top {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  text-align: center;
+}
+
+h4.mva__process--divider {
+  position: relative;
+  z-index: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  text-align: center;
+}
+
+h4.mva__process--divider:before {
+  border-top: 2px solid black;
+  content: "";
+  margin: 0 auto;
+  /* this centers the line to the full width specified */
+  position: absolute;
+  /* positioning must be absolute here, and relative positioning must be applied to the parent */
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 95%;
+  z-index: -1;
+}
+
+h4.mva__process--divider span {
+  /* to hide the lines from behind the text, you have to set the background color the same as the container */
+  background: white;
+  padding: 0 15px;
+  font-size: 150%;
+}
+
+h4.mva__deliverables--divider {
+  position: relative;
+  z-index: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  text-align: center;
+}
+
+h4.mva__deliverables--divider:before {
+  border-top: 2px solid black;
+  content: "";
+  margin: 0 auto;
+  /* this centers the line to the full width specified */
+  position: absolute;
+  /* positioning must be absolute here, and relative positioning must be applied to the parent */
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 95%;
+  z-index: -1;
+}
+
+h4.mva__deliverables--divider span {
+  /* to hide the lines from behind the text, you have to set the background color the same as the container */
+  background: white;
+  padding: 0 15px;
+  font-size: 150%;
+}
+
+img.mva__hero {
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  display: inline-block;
+}
+
+.mva__inspo--wrapper {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  text-align: center;
+}
+
+.mva__deliverables--wrapper {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
+  text-align: center;
+  display: inline-block;
+}
+
+.screens {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
+  max-width: 100%;
+}
+
+.mva__prototype--wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1/5;
+}
+
+h4.mva__prototype--divider {
+  position: relative;
+  z-index: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+  text-align: center;
+}
+
+h4.mva__prototype--divider:before {
+  border-top: 2px solid black;
+  content: "";
+  margin: 0 auto;
+  /* this centers the line to the full width specified */
+  position: absolute;
+  /* positioning must be absolute here, and relative positioning must be applied to the parent */
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 95%;
+  z-index: -1;
+}
+
+h4.mva__prototype--divider span {
+  /* to hide the lines from behind the text, you have to set the background color the same as the container */
+  background: white;
+  padding: 0 15px;
+  font-size: 150%;
+}
+
+img.mva__screens {
+  display: inline-block;
+  width: 25vw;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 3vw;
+  z-index: 0;
+}
+
+img.mva__inspo--user {
+  width: 130%;
+  margin-right: auto;
+  margin-left: -6vw;
+  display: inline-block;
+  padding-right: 5vw;
+}
+
+.mva__prototype--wrapper {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1/5;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
+  text-align: center;
+}
+
+iframe {
+  width: 30vw;
+  height: 65vw;
+  border: none;
+  display: inline-block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+p.mva__text {
+  font-size: 85%;
+  font-weight: 400;
+}
+
+p.mva__text--inspo {
+  font-size: 65%;
+  font-weight: 200;
+  text-align: left;
+  line-height: 150%;
+}
+
+p.mva__text--deliverables {
+  font-size: 65%;
+  font-weight: 200;
+  text-align: left;
+  line-height: 150%;
+  padding-left: 1vw;
+}
+
+img.mva__inspo {
+  max-width: 60%;
+  display: inline-block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.mva_screens--examples {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  padding-top: 1vw;
+}
+
+.initial {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  text-align: center;
+}
+
+.whitebar {
+  height: 4vw;
+  background-color: white;
+  margin-top: -4vw;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+}
+
+.whitebar:nth-child(11) {
+  height: 8vw;
+  background-color: white;
+  margin-top: -4vw;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+  z-index: 1 !important;
+}
+
+.sticky {
+  display: none;
+}
+/*# sourceMappingURL=mva.css.map */

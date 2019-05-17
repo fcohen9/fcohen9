@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="350.214" height="446.285" viewBox="0 0 350.214 446.285">
+  <title>Asset 6</title>
+  <g>
+    <rect x="153.013" y="149.285" width="28" height="297" rx="12" fill="#98ffa8"/>
+    <ellipse cx="222.013" cy="82.285" rx="74" ry="28" transform="translate(22.735 210.147) rotate(-53.021)" fill="#fff574"/>
+    <ellipse cx="259.013" cy="120.285" rx="74" ry="28" transform="translate(-26.139 104.648) rotate(-21.771)" fill="#fff574"/>
+    <ellipse cx="277.013" cy="170.285" rx="28" ry="74" transform="matrix(0.159, -0.987, 0.987, 0.159, 64.958, 416.792)" fill="#fff574"/>
+    <ellipse cx="255.013" cy="220.285" rx="28" ry="74" transform="translate(-74.115 292.615) rotate(-53.215)" fill="#fff574"/>
+    <ellipse cx="207.013" cy="253.285" rx="28" ry="74" transform="translate(-81.106 98.381) rotate(-22.476)" fill="#fff574"/>
+    <ellipse cx="147.013" cy="252.285" rx="74" ry="28" transform="translate(-126.735 353.883) rotate(-80.131)" fill="#fff574"/>
+    <ellipse cx="95.372" cy="223.917" rx="74" ry="28" transform="translate(-130.399 133.022) rotate(-45)" fill="#fff574"/>
+    <ellipse cx="73.464" cy="176" rx="74" ry="28" transform="translate(-22.256 11.043) rotate(-7.469)" fill="#fff574"/>
+    <ellipse cx="78.464" cy="127" rx="28" ry="74" transform="translate(-69.328 148.049) rotate(-66.397)" fill="#fff574"/>
+    <ellipse cx="114.464" cy="95" rx="28" ry="74" transform="translate(-34.208 99.853) rotate(-41.561)" fill="#fff574"/>
+    <ellipse cx="171.464" cy="74" rx="28" ry="74" fill="#fff574"/>
+    <circle cx="167.013" cy="165.285" r="44" fill="#ffbfe8"/>
+  </g>
+</svg>

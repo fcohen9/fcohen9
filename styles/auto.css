@@ -1,0 +1,23 @@
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 5vw 60px;
+      grid-template-rows: 5vw 60px;
+}
+
+.colorbar {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  position: fixed;
+  background-color: blue;
+  width: 98.5%;
+}
+
+h3 {
+  font-family: Helvetica, sans-serif;
+  color: white;
+  font-weight: 300;
+  padding-left: 1%;
+}
+/*# sourceMappingURL=auto.css.map */

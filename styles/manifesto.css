@@ -1,0 +1,215 @@
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25vw 25vw 25vw 25vw;
+      grid-template-columns: 25vw 25vw 25vw 25vw;
+  -ms-grid-rows: 2.5% 25% 10% 15% 27%;
+      grid-template-rows: 2.5% 25% 10% 15% 27%;
+  text-align: center;
+  max-width: 50vw;
+}
+
+iframe {
+  border: none;
+  padding-bottom: 2vw;
+}
+
+h3 {
+  font-family: brownstd, sans-serif;
+  color: black;
+  letter-spacing: 3px;
+}
+
+h3.manifesto__title {
+  position: relative;
+  z-index: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1/5;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  text-align: center;
+}
+
+h3.manifesto__title:before {
+  border-top: 2px solid black;
+  content: "";
+  margin: 0 auto;
+  /* this centers the line to the full width specified */
+  position: absolute;
+  /* positioning must be absolute here, and relative positioning must be applied to the parent */
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 50%;
+  width: 95%;
+  z-index: -1;
+}
+
+h3.manifesto__title span {
+  /* to hide the lines from behind the text, you have to set the background color the same as the container */
+  background: white;
+  padding: 0 15px;
+  font-size: 150%;
+}
+
+.manifesto__top {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+  display: inline-block;
+  padding-top: 10vw;
+}
+
+p.manifesto__text {
+  font-size: 50%;
+  padding-top: 1vw;
+}
+
+.manifesto__process--divider {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1/5;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+}
+
+h4.manifesto__process--divider {
+  position: relative;
+  z-index: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1/5;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  text-align: center;
+}
+
+h4.manifesto__process--divider:before {
+  border-top: 2px solid black;
+  content: "";
+  margin: 0 auto;
+  /* this centers the line to the full width specified */
+  position: absolute;
+  /* positioning must be absolute here, and relative positioning must be applied to the parent */
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 95%;
+  z-index: -1;
+}
+
+h4.manifesto__process--divider span {
+  /* to hide the lines from behind the text, you have to set the background color the same as the container */
+  background: white;
+  padding: 0 15px;
+  font-size: 150%;
+}
+
+.manifesto__inspo--wrapper {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+}
+
+.manifesto__inspo--text {
+  font-size: 50%;
+}
+
+li.manifesto {
+  font-size: 50%;
+  line-height: 150%;
+  font-weight: 200;
+  text-align: left;
+  padding-bottom: 1vw;
+}
+
+.manifesto__process {
+  max-width: 90%;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  grid-row: 3/5;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3vw;
+}
+
+.manifesto__wrapper {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
+  margin-top: 5vw;
+}
+
+h4.manifesto__deliverables--divider {
+  position: relative;
+  z-index: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1/5;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
+}
+
+h4.manifesto__deliverables--divider:before {
+  border-top: 2px solid black;
+  content: "";
+  margin: 0 auto;
+  /* this centers the line to the full width specified */
+  position: absolute;
+  /* positioning must be absolute here, and relative positioning must be applied to the parent */
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 95%;
+  z-index: -1;
+}
+
+h4.manifesto__deliverables--divider span {
+  /* to hide the lines from behind the text, you have to set the background color the same as the container */
+  background: white;
+  padding: 0 15px;
+  font-size: 150%;
+}
+
+p.manifesto__text--deliverables {
+  font-size: 50%;
+  font-weight: 200;
+}
+
+.manifesto__images--wrapper {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
+}
+
+p.manifesto {
+  font-size: 50%;
+  font-weight: 200;
+  line-height: 150%;
+  text-align: left;
+  margin-left: 1.5vw;
+}
+/*# sourceMappingURL=manifesto.css.map */

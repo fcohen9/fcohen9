@@ -1,0 +1,147 @@
+* {
+  text-decoration: none;
+  font-family: brandon-grotesque, sans-serif;
+}
+
+h4 {
+  font-family: brownstd, sans-serif;
+  font-weight: 300;
+  padding-left: 1%;
+  letter-spacing: 1px;
+  font-size: 50%;
+}
+
+.header-wrapper {
+  margin-left: 0;
+}
+
+.subpage__wrapper {
+  margin-bottom: 15%;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  text-align: center;
+}
+
+.mva {
+  max-width: 20%;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+  grid-row: auto;
+  margin: 5%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.mva__wrapper {
+  background-color: grey;
+}
+
+.noname {
+  max-width: 30%;
+}
+
+.catalogue {
+  max-width: 71%;
+}
+
+.alphabets {
+  max-width: 50%;
+  display: inline-block;
+}
+
+.alphabet__copy {
+  margin-bottom: 50%;
+}
+
+/*.alphabets__largephoto {
+    max-width: 80%;
+    padding: 0;
+    margin: 0;
+}*/
+.catalogue__wrapper {
+  display: inline-block;
+}
+
+.slideshow__catalogue {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  z-index: 0;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  display: inline-block;
+}
+
+.cover-ads__bottom--catalogue {
+  position: absolute;
+  background-color: white;
+  z-index: 0;
+  height: 45px;
+  width: 100%;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  margin-top: 495px;
+}
+
+.noname__wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+
+.noname__column1 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+}
+
+.noname__column2 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+}
+
+.physics1 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  max-width: 25%;
+  padding: 3%;
+}
+
+.physics2 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  max-width: 25%;
+  padding: 3%;
+}
+
+.physics3 {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  max-width: 25%;
+  padding: 3%;
+}
+
+a {
+  text-decoration: none;
+}
+/*# sourceMappingURL=subpage.css.map */

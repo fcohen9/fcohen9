@@ -1,0 +1,264 @@
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: .03fr .2fr .1fr .2fr;
+      grid-template-rows: .03fr .2fr .1fr .2fr;
+  text-align: center;
+}
+
+iframe {
+  width: 60vw;
+  height: 40vw;
+  margin-right: auto;
+  margin-left: auto;
+  display: inline-block;
+  margin-top: -8vw;
+}
+
+p.herotext {
+  font-size: 50%;
+  padding-top: 1vw;
+  text-align: center;
+}
+
+img.hero {
+  width: 75vw;
+  margin-right: auto;
+  margin-left: auto;
+  display: inline-block;
+  margin-top: 2vw;
+}
+
+.hero {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1/5;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  text-align: center;
+}
+
+.wrapper-wrapper {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  grid-row: 3/5;
+  max-width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -11vw;
+}
+
+.pew__video--wrapper {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1/5;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
+  text-align: center;
+  margin-top: 5vw;
+}
+
+h4.deliverables {
+  position: relative;
+  z-index: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1/5;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  text-align: center;
+}
+
+h4.deliverables:before {
+  border-top: 2px solid black;
+  content: "";
+  margin: 0 auto;
+  /* this centers the line to the full width specified */
+  position: absolute;
+  /* positioning must be absolute here, and relative positioning must be applied to the parent */
+  top: 17%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 95%;
+  z-index: -1;
+}
+
+h4.deliverables span {
+  /* to hide the lines from behind the text, you have to set the background color the same as the container */
+  background: white;
+  padding: 0 15px;
+  font-size: 150%;
+}
+
+h3 {
+  font-family: brownstd, sans-serif;
+  color: black;
+  letter-spacing: 3px;
+}
+
+h3.pew__title {
+  position: relative;
+  z-index: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1/5;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  text-align: center;
+  color: black;
+  background-color: white;
+  letter-spacing: 3px;
+}
+
+h3.pew__title:before {
+  border-top: 2px solid black;
+  content: "";
+  margin: 0 auto;
+  /* this centers the line to the full width specified */
+  position: absolute;
+  /* positioning must be absolute here, and relative positioning must be applied to the parent */
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 95%;
+  z-index: -1;
+}
+
+h3.pew__title span {
+  /* to hide the lines from behind the text, you have to set the background color the same as the container */
+  background: white;
+  padding: 0 15px;
+  font-size: 150%;
+}
+
+.pew__process--wrapper {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  text-align: center;
+}
+
+h4.pew__process--divider {
+  position: relative;
+  z-index: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  text-align: center;
+}
+
+h4.pew__process--divider:before {
+  border-top: 2px solid black;
+  content: "";
+  margin: 0 auto;
+  /* this centers the line to the full width specified */
+  position: absolute;
+  /* positioning must be absolute here, and relative positioning must be applied to the parent */
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 95%;
+  z-index: -1;
+}
+
+h4.pew__process--divider span {
+  /* to hide the lines from behind the text, you have to set the background color the same as the container */
+  background: white;
+  padding: 0 15px;
+  font-size: 150%;
+}
+
+img.pew__process {
+  max-width: 30%;
+  padding: 5vw;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+img.pew__process--info {
+  max-width: 75%;
+  padding-right: 2vw;
+  padding-left: 2vw;
+  padding-top: 2vw;
+  padding-bottom: 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+img.pew__process--storyboard {
+  max-width: 100%;
+}
+
+img.pew__process--research {
+  width: 40vw;
+  margin-right: auto;
+  margin-left: auto;
+  display: inline-block;
+}
+
+img.pew__process--large {
+  max-width: 25%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 5vw;
+}
+
+img.pew__process--xlarge {
+  max-width: 15%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 5vw;
+}
+
+img.pew__process--small {
+  max-width: 60%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 5vw;
+}
+
+p.pew__process {
+  font-size: 50%;
+  font-weight: 200;
+  line-height: 150%;
+  text-align: left;
+  margin-top: 2vw;
+}
+
+.pew__process--assets {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  min-width: 100%;
+}
+
+.pew__process--infographs {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+/*# sourceMappingURL=pew.css.map */

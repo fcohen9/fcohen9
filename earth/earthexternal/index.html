@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/styles/base.css">
+    <link rel="stylesheet" href="/styles/earthexternal.css">
+
+    <title>  What is Earth? Experimental Website |  Fiona Cohen </title>
+
+</head>
+
+<body >
+
+    <div class="header-wrapper">
+
+    <nav>
+    <ul class="u-list-reset">
+        
+        <li> <a class="button__header " href="/">
+                Fiona Cohen</a> </li>
+        
+        <li> <a class="button__header " href="/info/">
+                info</a> </li>
+        
+        <li> <a class="button__header " href="/projects/">
+                projects</a> </li>
+        
+    </ul>
+</nav>
+
+</div>
+
+
+    
+<body>
+    <div class="wrapper">
+
+        <h1> face </h1>
+        <div class="earth"> </div>
+
+        <p class="text"> Earth is the third planet from the</p> <button class="collapsible">
+            Sun
+        </button>
+        <div class="content">
+            <div class="open__wrapper-sun">
+
+                <div class="sun--shape"> </div>
+            </div>
+        </div>
+
+
+        <p class="text">and the only
+            astronomical object known to harbor</p>
+        <button class="collapsible">life.</button>
+        <div class="content">
+            <div class="open__wrapper-life">
+
+                <div class="mitosis">
+                    <div class="circle"> </div>
+                    <div class="circle"> </div>
+                </div>
+            </div>
+        </div>
+
+
+        <p class="text">Earth
+            formed over 4.5 </p> <button class="collapsible">billion</button>
+        <div class="content">
+            <div class="open__wrapper--billion">
+
+                <div class="timeline"> </div>
+            </div>
+        </div>
+        <p class="text"> years ago. </p>
+
+
+
+        <p class="text"> Earth's </p> <button class="collapsible">gravity</button>
+        <div class="content">
+            <div class="open__wrapper--gravity">
+
+                <div class="gravityobjects">
+                    <div class="gravity--circle"> </div>
+                    <div class="gravity--circle"> </div>
+
+                    <div class="gravity--circle"> </div>
+
+                    <div class="gravity--circle"> </div>
+
+                    <div class="gravity--circle"> </div>
+                </div>
+            </div>
+        </div>
+        <p class="text"> interacts with other objects in space, </p>
+
+
+        <p class="text">especially
+            the
+            Sun and
+            the </p> <button class="collapsible">moon,</button>
+        <div class="content">
+            <div class="open__wrapper--moon">
+
+                <div class="moon"> </div>
+                <div class="rotating-earth"> </div>
+            </div>
+        </div>
+        <p class="text"> Earth's only natural satellite.</p>
+
+
+        <p class="text">Earth revolves
+            around
+            the Sun in 365.26 days, a period known
+            as
+            an Earth </p>
+        <button class="collapsible">year.</button>
+
+        <div class="content">
+            <div class="open__wrapper-year">
+
+                <h2> How long will the year last? </h2>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
+    </script>
+
+
+</body>
+
+</html>
+
+
+    
+
+    
+
+</body>
+
+
+</html>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="536" height="537" viewBox="0 0 536 537">
+  <title>Asset 8</title>
+  <g>
+    <circle cx="270.5" cy="268.5" r="144.5" fill="#fff574"/>
+    <rect x="258" width="24" height="93" rx="12" fill="#fff574"/>
+    <rect x="261" y="444" width="24" height="93" rx="12" fill="#fff574"/>
+    <rect x="477.5" y="219.5" width="24" height="93" rx="12" transform="translate(755.5 -223.5) rotate(90)" fill="#fff574"/>
+    <rect x="34.5" y="221.5" width="24" height="93" rx="12" transform="translate(314.5 221.5) rotate(90)" fill="#fff574"/>
+    <rect x="89.5" y="66.5" width="24" height="93" rx="12" transform="translate(252.673 127.761) rotate(137.508)" fill="#fff574"/>
+    <rect x="434.5" y="64.5" width="24" height="93" rx="12" transform="translate(700.756 494.454) rotate(-137.508)" fill="#fff574"/>
+    <rect x="408.5" y="391.5" width="24" height="93" rx="12" transform="translate(1026.428 476.925) rotate(137.508)" fill="#fff574"/>
+    <rect x="91.5" y="392.5" width="24" height="93" rx="12" transform="translate(-116.722 832.619) rotate(-137.508)" fill="#fff574"/>
+    <ellipse cx="270.5" cy="264.5" rx="6.5" ry="27.5" fill="#ff9f66"/>
+    <circle cx="218.5" cy="233.5" r="8.5" fill="#ff9f66"/>
+    <path d="M223,315s44,41,94,0" fill="none" stroke="#ff9f66" stroke-miterlimit="10" stroke-width="5"/>
+    <circle cx="322.92" cy="233.402" r="8.5" fill="#ff9f66"/>
+  </g>
+</svg>

@@ -1,0 +1,260 @@
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: .05fr .05fr .1fr;
+      grid-template-rows: .05fr .05fr .1fr;
+  text-align: center;
+}
+
+h3 {
+  font-family: brownstd, sans-serif;
+  color: black;
+  letter-spacing: 3px;
+}
+
+h3.alphabets__title {
+  position: relative;
+  z-index: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1/5;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  text-align: center;
+  background-color: white;
+}
+
+h3.alphabets__title:before {
+  border-top: 2px solid black;
+  content: "";
+  margin: 0 auto;
+  /* this centers the line to the full width specified */
+  position: absolute;
+  /* positioning must be absolute here, and relative positioning must be applied to the parent */
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 95%;
+  z-index: -1;
+}
+
+h3.alphabets__title span {
+  /* to hide the lines from behind the text, you have to set the background color the same as the container */
+  background: white;
+  padding: 0 15px;
+  font-size: 150%;
+}
+
+.alphabets__top {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  display: inline-block;
+}
+
+p.alphabets__text {
+  font-size: 50%;
+}
+
+.alphabets__process--divider {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1/5;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+}
+
+h4.alphabets__process--divider {
+  position: relative;
+  z-index: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1/5;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  text-align: center;
+}
+
+h4.alphabets__process--divider:before {
+  border-top: 2px solid black;
+  content: "";
+  margin: 0 auto;
+  /* this centers the line to the full width specified */
+  position: absolute;
+  /* positioning must be absolute here, and relative positioning must be applied to the parent */
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 95%;
+  z-index: -1;
+}
+
+h4.alphabets__process--divider span {
+  /* to hide the lines from behind the text, you have to set the background color the same as the container */
+  background: white;
+  padding: 0 15px;
+  font-size: 150%;
+}
+
+img.alphabets__hero {
+  max-width: 100%;
+}
+
+.alphabets__process--wrapper {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: .5fr .5fr;
+      grid-template-columns: .5fr .5fr;
+  -ms-grid-rows: .05fr .05fr .05fr;
+      grid-template-rows: .05fr .05fr .05fr;
+}
+
+p.alphabets__text--process {
+  font-size: 50%;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  text-align: left;
+  padding-right: 2vw;
+  font-weight: 200;
+  padding-left: 1vw;
+  line-height: 140%;
+}
+
+.alphabets1 {
+  max-width: 95%;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  margin: 1vw;
+}
+
+.alphabets2 {
+  max-width: 95%;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  margin: 1vw;
+}
+
+.alphabets3 {
+  max-width: 95%;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  margin: 1vw;
+}
+
+.alphabets4 {
+  max-width: 95%;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  margin: 1vw;
+}
+
+img {
+  max-width: 95%;
+}
+
+.alphabets__process {
+  max-width: 90%;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  grid-row: 3/5;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3vw;
+}
+
+.alphabets__wrapper {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
+}
+
+h4.alphabets__deliverables--divider {
+  position: relative;
+  z-index: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1/5;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
+}
+
+h4.alphabets__deliverables--divider:before {
+  border-top: 2px solid black;
+  content: "";
+  margin: 0 auto;
+  /* this centers the line to the full width specified */
+  position: absolute;
+  /* positioning must be absolute here, and relative positioning must be applied to the parent */
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 95%;
+  z-index: -1;
+}
+
+h4.alphabets__deliverables--divider span {
+  /* to hide the lines from behind the text, you have to set the background color the same as the container */
+  background: white;
+  padding: 0 15px;
+  font-size: 150%;
+}
+
+p.alphabets__text--deliverables {
+  font-size: 50%;
+  font-weight: 200;
+}
+
+.alphabets__videos--wrapper {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
+}
+/*# sourceMappingURL=alphabets.css.map */

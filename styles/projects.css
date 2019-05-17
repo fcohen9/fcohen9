@@ -1,0 +1,43 @@
+* {
+  font-size: 36px;
+  font-family: brandon-grotesque, sans-serif;
+}
+
+h2 {
+  font-family: brownstd, sans-serif;
+  line-height: 140%;
+  font-weight: 300;
+  font-size: 50%;
+  color: black;
+}
+
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+  margin-left: 20.5%;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.column1 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+}
+
+.column2 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+}
+
+h5 {
+  font-family: brownstd, sans-serif;
+  line-height: 60%;
+  font-weight: 500;
+  font-size: 100%;
+  color: black;
+  padding-top: 2vw;
+  margin-bottom: 2vw;
+}
+/*# sourceMappingURL=projects.css.map */

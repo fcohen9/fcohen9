@@ -1,0 +1,303 @@
+* {
+  text-decoration: none;
+  font-family: brandon-grotesque, sans-serif;
+}
+
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: .02fr .125fr .15fr .25fr .25fr;
+      grid-template-rows: .02fr .125fr .15fr .25fr .25fr;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  text-align: center;
+  max-width: 4fr;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.jump {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-column: 4/5;
+  font-family: brownstd;
+  text-decoration: none;
+  padding-left: 6.3vw;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-top: 0;
+  margin: 0;
+}
+
+.jump h6 {
+  font-family: brownstd;
+  font-size: 50%;
+  font-weight: 300;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  color: black;
+}
+
+img {
+  max-width: 100%;
+  margin-bottom: 4vw;
+}
+
+.catalogue__title {
+  text-align: center;
+}
+
+h3.catalogue__title {
+  position: relative;
+  z-index: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1/5;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  text-align: center;
+  color: black;
+  background-color: white;
+  letter-spacing: 3px;
+}
+
+h3.catalogue__title:before {
+  border-top: 2px solid black;
+  content: "";
+  margin: 0 auto;
+  /* this centers the line to the full width specified */
+  position: absolute;
+  /* positioning must be absolute here, and relative positioning must be applied to the parent */
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 95%;
+  z-index: -1;
+}
+
+h3.catalogue__title span {
+  /* to hide the lines from behind the text, you have to set the background color the same as the container */
+  background: white;
+  padding: 0 15px;
+  font-size: 150%;
+}
+
+.catalogue__top {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+}
+
+img.catalogue__hero {
+  max-width: 100%;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  grid-row: 2/4;
+  max-width: 40vw;
+  margin-bottom: 4vw;
+}
+
+p.catalogue__text {
+  font-size: 50%;
+}
+
+.catalogue__process--wrapper {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+}
+
+h4.catalogue__process--divider {
+  position: relative;
+  z-index: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1/5;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  text-align: center;
+}
+
+h4.catalogue__process--divider:before {
+  border-top: 2px solid black;
+  content: "";
+  margin: 0 auto;
+  /* this centers the line to the full width specified */
+  position: absolute;
+  /* positioning must be absolute here, and relative positioning must be applied to the parent */
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 95%;
+  z-index: -1;
+}
+
+h4.catalogue__process--divider span {
+  /* to hide the lines from behind the text, you have to set the background color the same as the container */
+  background: white;
+  padding: 0 15px;
+  font-size: 150%;
+}
+
+img.catalogue__before1 {
+  max-width: 40vw;
+  margin-bottom: 4vw;
+}
+
+img.catalogue__before2 {
+  max-width: 40vw;
+  margin-bottom: 4vw;
+}
+
+.catalogue__text--process {
+  font-size: 50%;
+  line-height: 140%;
+  font-weight: 200;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+  text-align: left;
+  padding-left: 2vw;
+  padding-right: 1vw;
+  margin-top: -.25vw;
+}
+
+.catalogue__wrapper {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
+}
+
+img.catalogue__images {
+  max-width: 40vw;
+  margin: 1vw;
+  max-width: 40vw;
+  margin-bottom: 4vw;
+}
+
+h4.catalogue__deliverables--divider {
+  position: relative;
+  z-index: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1/5;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+}
+
+h4.catalogue__deliverables--divider:before {
+  border-top: 2px solid black;
+  content: "";
+  margin: 0 auto;
+  /* this centers the line to the full width specified */
+  position: absolute;
+  /* positioning must be absolute here, and relative positioning must be applied to the parent */
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 95%;
+  z-index: -1;
+}
+
+h4.catalogue__deliverables--divider span {
+  /* to hide the lines from behind the text, you have to set the background color the same as the container */
+  background: white;
+  padding: 0 15px;
+  font-size: 150%;
+}
+
+.slideshow__catalogue--wrapper {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1/5;
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 1;
+  grid-row: 5/6;
+  display: inline-block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.cover-ads__top {
+  position: absolute;
+  background-color: white;
+  z-index: 1;
+  height: 30px;
+  width: 100%;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+}
+
+.cover-ads__bottom--catalogue {
+  position: absolute;
+  background-color: white;
+  z-index: 1;
+  height: 45px;
+  width: 100%;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  margin-top: 640px;
+}
+
+p.catalogue__text--process {
+  font-size: 50%;
+  line-height: 150%;
+  text-align: left;
+}
+
+img.catalogue__process {
+  max-width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img.catalogue__process--large {
+  max-width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 1.6vw;
+}
+
+.initial {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: .5fr .5fr;
+      grid-template-rows: .5fr .5fr;
+  text-align: center;
+}
+/*# sourceMappingURL=catalogue1.css.map */

@@ -1,0 +1,648 @@
+* {
+  font-size: 36px;
+  text-decoration: none;
+  font-family: brandon-grotesque, sans-serif;
+}
+
+h3 {
+  font-family: brandon-grotesque, sans-serif;
+  color: black;
+  letter-spacing: 3px;
+}
+
+h3.homepage__title {
+  position: relative;
+  z-index: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1/5;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  text-align: center;
+}
+
+h3.homepage__title:before {
+  border-top: 2px solid black;
+  content: "";
+  margin: 0 auto;
+  /* this centers the line to the full width specified */
+  position: absolute;
+  /* positioning must be absolute here, and relative positioning must be applied to the parent */
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 95%;
+  z-index: -1;
+}
+
+h3.homepage__title span {
+  /* to hide the lines from behind the text, you have to set the background color the same as the container */
+  background: white;
+  padding: 0 15px;
+  font-size: 150%;
+}
+
+/*
+.homepage__imgs {
+    overflow: hidden;
+    width: 20vw;
+    height: 20vw;
+    z-index: 1;
+    background-color: yellow;
+}
+
+img.homepage {
+    width: 20vw;
+    height: 20vw;
+    z-index: -1;
+}*/
+img {
+  border-radius: 8px !important;
+}
+
+p.homepage {
+  font-size: 50%;
+  line-height: 150%;
+  font-weight: 300;
+  text-align: center;
+  color: white;
+}
+
+.homepage__imgs {
+  position: relative;
+  width: 30vw;
+  height: 20vw;
+}
+
+img.homepage {
+  display: block;
+  width: 30vw;
+  height: 20vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px;
+}
+
+img.contain {
+  display: block;
+  width: 30vw;
+  height: 20vw;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 2vw;
+}
+
+img.size {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  background-color: black;
+  border-radius: 8px;
+}
+
+.homepage__imgs:hover .overlay {
+  opacity: .5;
+}
+
+.homepage__imgs:hover .text:hover {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 150%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 0;
+  z-index: 2;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr .9fr 1fr;
+      grid-template-columns: 1fr .9fr 1fr;
+  -ms-grid-rows: .4fr .1fr 1fr 1fr;
+      grid-template-rows: .4fr .1fr 1fr 1fr;
+  margin-top: -6.5vw;
+  text-align: center;
+}
+
+.banner__wrapper {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  overflow: hidden;
+  margin-top: 5vw;
+}
+
+img.banner {
+  border-radius: 10px;
+}
+
+.wrapper__squares {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  grid-row: 3/5;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 3vw;
+}
+
+body {
+  background-color: white;
+}
+
+/*.circles {
+    vertical-align: middle;
+}
+*/
+h2 {
+  font-family: Brownstd, sans-serif;
+  line-height: 140%;
+  font-weight: 400;
+  font-size: 50%;
+  opacity: 1;
+  text-align: center;
+}
+
+h1 {
+  font-size: 100%;
+  font-family: helvetica;
+  font-weight: 300;
+  color: white;
+}
+
+h3.homepage__title {
+  font-size: 100%;
+}
+
+.absent,
+.alphabets,
+.bwp,
+.catalogue,
+.cola,
+.lostcity,
+.manifesto,
+.mva,
+.nocontent,
+.noname,
+.pew,
+.physics,
+.publication,
+.sadboiclub,
+.scarf,
+.typefaces,
+.lilly,
+.neighbors,
+.earth,
+.andor,
+.bitcamp,
+.future,
+.scheme,
+.health {
+  width: 30vw;
+  height: 20vw;
+  border-radius: 8px;
+  margin-right: 4vw;
+  margin-left: 4vw;
+  margin-bottom: 4vw;
+  -webkit-transition: background 0.5s ease-in-out;
+  transition: background 0.5s ease-in-out;
+  line-height: 15vw;
+}
+
+/*
+.nocontent:hover,
+.nocontent.hover {
+
+    background-color: lightgreen;
+
+}
+
+.lostcity:hover,
+.lostcity.hover {
+    background-color: whitesmoke;
+}
+
+.noname:hover,
+.noname.hover {
+
+    background-color: grey;
+}
+
+.sadboiclub:hover,
+.sadboiclub.hover {
+    background-color: darkgray;
+}
+
+.manifesto:hover,
+.manifesto.hover {
+    background-color: slateblue;
+}
+
+.absent:hover,
+.absent.hover {
+    background-color: lightblue;
+}
+
+.typefaces:hover,
+.typefaces.hover {
+    background-color: blueviolet;
+}
+
+.catalogue:hover,
+.catalogue.hover {
+
+    background-color: #ff00aa;
+}
+
+.alphabets:hover,
+.alphabets.hover {
+    background-color: #d56374;
+}
+
+.publication:hover,
+.publication.hover {
+    background-color: #42b3a0;
+}
+
+.physics:hover,
+.physics.hover {
+
+    background-color: burlywood;
+}
+
+
+
+.pew:hover,
+.pew.hover {
+
+    background-color: #fda53e;
+}
+
+.bwp:hover,
+.bwp.hover {
+
+    background-color: #a18ec1;
+}
+
+
+
+.lilly:hover,
+.lilly.hover {
+    background-color: lightblue;
+}
+
+.mva:hover,
+.mva.hover {
+    background-color: #f15a29;
+}
+
+/*.neighbors:hover,
+.neighbors.hover {
+    background-color: lightcoral;
+    z-index: 2;
+    opacity: 50%;
+}
+.earth:hover,
+.earth.hover {
+    background-color: lightcyan;
+}
+
+*/
+@media only screen and (max-width: 860px) {
+  h3.homepage__title {
+    position: relative;
+    z-index: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-column: 1/5;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    text-align: center;
+  }
+  h3.homepage__title:before {
+    border-top: 2px solid black;
+    content: "";
+    margin: 0 auto;
+    /* this centers the line to the full width specified */
+    position: absolute;
+    /* positioning must be absolute here, and relative positioning must be applied to the parent */
+    top: 50%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 95%;
+    z-index: -1;
+  }
+  h3.homepage__title span {
+    /* to hide the lines from behind the text, you have to set the background color the same as the container */
+    background: white;
+    padding: 0 15px;
+    font-size: 110%;
+  }
+  img.banner {
+    margin: 0;
+    width: 100vw;
+  }
+  .wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: .35fr .05fr 1fr 1fr;
+        grid-template-rows: .35fr .05fr 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .wrapper {
+    overflow: hidden;
+    -ms-grid-rows: .01fr .05fr 1fr 1fr;
+        grid-template-rows: .01fr .05fr 1fr 1fr;
+  }
+  img.banner {
+    margin: 0;
+    width: 100%;
+    display: none;
+  }
+  .wrapper__squares {
+    display: -ms-inline-grid;
+    display: inline-grid;
+    -ms-grid-columns: 80vw;
+        grid-template-columns: 80vw;
+    text-align: center;
+    margin-left: 3vw;
+  }
+  .text {
+    top: 50%;
+    left: 58%;
+  }
+  h2 {
+    font-weight: 600;
+    font-size: 75%;
+  }
+  .absent,
+  .alphabets,
+  .bwp,
+  .catalogue,
+  .cola,
+  .lostcity,
+  .manifesto,
+  .mva,
+  .nocontent,
+  .noname,
+  .pew,
+  .physics,
+  .publication,
+  .sadboiclub,
+  .scarf,
+  .typefaces,
+  .lilly,
+  .neighbors,
+  .earth,
+  .andor {
+    width: 60vw;
+    height: 40vw;
+    margin-bottom: 5vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  h3 {
+    font-family: brownstd, sans-serif;
+    letter-spacing: 1px;
+  }
+  h3.homepage__title {
+    position: relative;
+    z-index: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-column: 1/5;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    text-align: center;
+  }
+  h3.homepage__title:before {
+    border-top: none;
+    content: "";
+    margin: 0 auto;
+    /* this centers the line to the full width specified */
+    position: absolute;
+    /* positioning must be absolute here, and relative positioning must be applied to the parent */
+    top: 50%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 95%;
+    z-index: -1;
+  }
+  h3.homepage__title span {
+    /* to hide the lines from behind the text, you have to set the background color the same as the container */
+    background: white;
+    padding: 0 15px;
+    font-size: 110%;
+  }
+  h3 {
+    padding: 0;
+  }
+  img {
+    display: inline-block;
+    margin-bottom: 15vw;
+  }
+  img {
+    border-radius: 8px !important;
+  }
+  .homepage__imgs {
+    position: relative;
+    width: 60vw;
+    height: 40vw;
+    margin-bottom: 15vw;
+  }
+  img.homepage {
+    display: block;
+    width: 60vw;
+    height: 40vw;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15vw;
+    margin-left: 5vw;
+  }
+  img.contain {
+    display: block;
+    width: 60vw;
+    height: 40vw;
+    -o-object-fit: contain;
+       object-fit: contain;
+    border-radius: 2vw;
+    margin-bottom: 15vw;
+  }
+  img.size {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    margin-bottom: 15vw;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    -webkit-transition: .5s ease;
+    transition: .5s ease;
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 15vw;
+    margin-left: 5vw;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .banner__wrapper {
+    display: none;
+  }
+  h3.homepage__title {
+    display: none;
+  }
+  .wrapper__squares {
+    margin-top: 7vw;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+  }
+  h2 {
+    font-size: 40%;
+    font-weight: 600;
+  }
+}
+
+/*
+@media only screen and (max-width: 425px) {
+    .wrapper {
+        margin-top: 0;
+        margin-left: 12.5%;
+
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    .banner__wrapper {
+        display: none;
+    }
+
+    h3 {
+        display: none;
+    }
+
+    .absent,
+    .alphabets,
+    .bwp,
+    .catalogue,
+    .cola,
+    .lostcity,
+    .manifesto,
+    .mva,
+    .nocontent,
+    .noname,
+    .pew,
+    .physics,
+    .publication,
+    .sadboiclub,
+    .scarf,
+    .typefaces,
+    .lilly,
+    .neighbors,
+    .earth {
+        width: 40vw;
+        height: 40vw;
+        margin-left: 4vw;
+        margin-right: 2%;
+        margin-bottom: 5vw;
+        color: black;
+        margin-top: 0;
+        display: block;
+
+        background-color: white;
+
+    }
+
+
+
+    h2 {
+        z-index: 1;
+        color: black;
+        padding-top: 5%;
+    }
+
+    img.homepage {
+        min-width: 200%;
+        min-height: 200%;
+
+    }
+
+    .wrapper__squares {
+
+        width: 200%;
+        display: grid;
+        grid-template-columns: 100%;
+
+
+    }
+
+    .text {
+
+        font-size: 100%;
+        min-width: 80%;
+
+
+
+
+    }
+
+    .homepage__imgs {
+        min-height: 50vw;
+        min-width: 50vw;
+    }
+}
+*/
+/*# sourceMappingURL=homepage.css.map */

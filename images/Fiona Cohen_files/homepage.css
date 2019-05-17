@@ -1,0 +1,328 @@
+@font-face {
+  font-family: 'Brownstd';
+  src: url("images/brownstd/BrownStd-Regular.otf");
+}
+
+* {
+  text-decoration: none;
+  font-family: 'Brownstd', sans-serif;
+}
+
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: .25fr 4fr;
+      grid-template-rows: .25fr 4fr;
+  -ms-grid-columns: 3fr .5fr;
+      grid-template-columns: 3fr .5fr;
+  text-align: center;
+}
+
+.wrapper__squares {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+  -ms-grid-columns: .75fr .75fr .75fr .75fr;
+      grid-template-columns: .75fr .75fr .75fr .75fr;
+  text-align: center;
+}
+
+button {
+  max-height: 100%;
+  font-size: 60%;
+  width: 15vw;
+  border: none;
+  background-color: darkgray;
+  border-radius: 8px;
+  color: white;
+  font-weight: 300;
+  letter-spacing: 1px;
+  padding: 2px 8px 2px 8px;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  margin: auto;
+  margin-right: 5.5vw;
+  margin-top: -7vw;
+}
+
+.header-wrapper {
+  margin-left: 3vw;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+.circles {
+  vertical-align: middle;
+}
+
+h2 {
+  font-family: Brownstd, sans-serif;
+  line-height: 140%;
+  font-weight: 300;
+  font-size: 50%;
+  color: #1a1a1a;
+  margin: 5%;
+  vertical-align: middle;
+  padding-top: 30%;
+}
+
+h1 {
+  font-size: 100%;
+  font-family: helvetica;
+  font-weight: 300;
+  color: white;
+}
+
+.absent,
+.alphabets,
+.bwp,
+.catalogue,
+.cola,
+.lostcity,
+.manifesto,
+.mva,
+.nocontent,
+.noname,
+.pew,
+.physics,
+.publication,
+.sadboiclub,
+.scarf,
+.typefaces,
+.lilly {
+  background-color: #1a1a1a;
+  width: 15vw;
+  height: 15vw;
+  border-radius: 8px;
+  margin-right: 4vw;
+  margin-left: 4vw;
+  margin-bottom: 4vw;
+}
+
+.nocontent:hover,
+.nocontent.hover {
+  background-color: lightgreen;
+}
+
+.lostcity:hover,
+.lostcity.hover {
+  background-color: orangered;
+}
+
+.noname:hover,
+.noname.hover {
+  background-color: grey;
+}
+
+.sadboiclub:hover,
+.sadboiclub.hover {
+  background-color: darkgray;
+}
+
+.manifesto:hover,
+.manifesto.hover {
+  background-color: slateblue;
+}
+
+.absent:hover,
+.absent.hover {
+  background-color: lightblue;
+}
+
+.typefaces:hover,
+.typefaces.hover {
+  background-color: blueviolet;
+}
+
+.catalogue:hover,
+.catalogue.hover {
+  background-color: magenta;
+}
+
+.alphabets:hover,
+.alphabets.hover {
+  background-color: hotpink;
+}
+
+.publication:hover,
+.publication.hover {
+  background-color: pink;
+}
+
+.physics:hover,
+.physics.hover {
+  background-color: burlywood;
+}
+
+.scarf:hover,
+.scarf.hover {
+  background-color: yellow;
+}
+
+.pew:hover,
+.pew.hover {
+  background-color: orange;
+}
+
+.bwp:hover,
+.bwp.hover {
+  background-color: lightsalmon;
+}
+
+.cola:hover,
+.cola.hover {
+  background-color: red;
+}
+
+.lilly:hover,
+.lilly.hover {
+  background-color: lightblue;
+}
+
+@media only screen and (max-width: 800px) {
+  .wrapper {
+    margin-top: 5%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+  }
+  button {
+    max-height: 17%;
+    font-size: 60%;
+    min-width: 50%;
+    border: none;
+    margin-left: 4vw;
+    padding: 2px 8px 2px 8px;
+  }
+  .absent,
+  .alphabets,
+  .bwp,
+  .catalogue,
+  .cola,
+  .lostcity,
+  .manifesto,
+  .mva,
+  .nocontent,
+  .noname,
+  .pew,
+  .physics,
+  .publication,
+  .sadboiclub,
+  .scarf,
+  .typefaces,
+  .lilly {
+    width: 20vw;
+    height: 20vw;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .wrapper {
+    margin-top: 5%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .absent,
+  .alphabets,
+  .bwp,
+  .catalogue,
+  .cola,
+  .lostcity,
+  .manifesto,
+  .mva,
+  .nocontent,
+  .noname,
+  .pew,
+  .physics,
+  .publication,
+  .sadboiclub,
+  .scarf,
+  .typefaces,
+  .lilly {
+    width: 70vw;
+    height: 20vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5vw;
+    color: black;
+  }
+  h2 {
+    z-index: 1;
+    color: black;
+    padding-top: 5%;
+  }
+  .nocontent {
+    background-color: lightgreen;
+  }
+  .lostcity {
+    background-color: orangered;
+  }
+  .noname {
+    background-color: grey;
+  }
+  .sadboiclub {
+    background-color: darkgray;
+  }
+  .manifesto {
+    background-color: slateblue;
+  }
+  .absent {
+    background-color: lightblue;
+  }
+  .typefaces {
+    background-color: blueviolet;
+  }
+  .catalogue {
+    background-color: magenta;
+  }
+  .alphabets {
+    background-color: hotpink;
+  }
+  .publication {
+    background-color: pink;
+  }
+  .physics {
+    background-color: burlywood;
+  }
+  .scarf {
+    background-color: yellow;
+  }
+  .pew {
+    background-color: orange;
+  }
+  .bwp {
+    background-color: lightsalmon;
+  }
+  .cola {
+    background-color: red;
+  }
+  .lilly {
+    background-color: lightblue;
+  }
+  button {
+    display: none;
+  }
+}
+/*# sourceMappingURL=homepage.css.map */

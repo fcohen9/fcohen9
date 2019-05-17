@@ -1,0 +1,365 @@
+* {
+  text-decoration: none;
+  font-family: brandon-grotesque, sans-serif;
+}
+
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  text-align: center;
+  max-width: 100vw;
+}
+
+.neighbors__text {
+  font-size: 70%;
+}
+
+.neighbors__top {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+}
+
+.process {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+  margin-bottom: 2vw;
+}
+
+.deliverables {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.prototype {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+  margin-right: auto;
+  margin-left: auto;
+  display: inline-block;
+}
+
+p.process {
+  font-size: 50%;
+  font-weight: 200;
+  text-align: left;
+  line-height: 150%;
+  margin-bottom: 2vw;
+  margin-top: 4vw;
+}
+
+p.process:nth-child(1) {
+  margin-top: -1vw;
+}
+
+p.prototype {
+  font-size: 50%;
+  font-weight: 200;
+  text-align: left;
+  line-height: 150%;
+}
+
+p.deliverables {
+  font-size: 50%;
+  font-weight: 200;
+  text-align: left;
+  line-height: 150%;
+  margin-bottom: 4vw;
+}
+
+p.bold {
+  font-weight: 400;
+}
+
+img.initialemojis {
+  max-width: 20vw;
+  margin-bottom: 3vw;
+  padding: 2vw;
+}
+
+.initialemojis1 {
+  -ms-grid-column: 2/3;
+  -ms-grid-column-span: 2/3;
+  grid-column: 2/3;
+  min-width: 80%;
+  margin-top: 1.5vw;
+}
+
+.initialemojis2 {
+  -ms-grid-column: 3/4;
+  -ms-grid-column-span: 3/4;
+  grid-column: 3/4;
+  min-width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 1.5vw;
+}
+
+img.newemojis {
+  min-width: 20vw;
+  margin-bottom: 3vw;
+  padding: 2vw;
+}
+
+.newemojis1 {
+  -ms-grid-column: 2/3;
+  -ms-grid-column-span: 2/3;
+  grid-column: 2/3;
+  min-width: 80%;
+  margin-top: 1.5vw;
+}
+
+.newemojis2 {
+  -ms-grid-column: 3/4;
+  -ms-grid-column-span: 3/4;
+  grid-column: 3/4;
+  min-width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 1.5vw;
+}
+
+.initialscreens {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 2vw;
+}
+
+img.initialscreens {
+  max-width: 95%;
+  margin: 3%;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+}
+
+img.initialscreens:nth-child(2) {
+  max-width: 95%;
+  margin: 3%;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  margin-top: -10%;
+}
+
+img.initialscreens:nth-child(3) {
+  max-width: 95%;
+  margin: 3%;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+}
+
+img {
+  max-width: 50%;
+}
+
+img.userpersona {
+  max-width: 100%;
+}
+
+h3 {
+  color: black;
+  letter-spacing: 3px;
+}
+
+h3.neighbors__title {
+  position: relative;
+  z-index: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1/5;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  text-align: center;
+}
+
+h3.neighbors__title:before {
+  border-top: 2px solid black;
+  content: "";
+  margin: 0 auto;
+  /* this centers the line to the full width specified */
+  position: absolute;
+  /* positioning must be absolute here, and relative positioning must be applied to the parent */
+  top: 40%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 75%;
+  z-index: -1;
+}
+
+h3.neighbors__title span {
+  /* to hide the lines from behind the text, you have to set the background color the same as the container */
+  background: white;
+  padding: 0 15px;
+  font-size: 150%;
+}
+
+.neighbors__top {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  display: inline-block;
+}
+
+h5 {
+  text-align: left;
+}
+
+.neighbors__process--divider {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1/5;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+}
+
+h4.neighbors__process--divider {
+  position: relative;
+  z-index: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1/5;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  text-align: center;
+}
+
+h4.neighbors__process--divider:before {
+  border-top: 2px solid black;
+  content: "";
+  margin: 0 auto;
+  /* this centers the line to the full width specified */
+  position: absolute;
+  /* positioning must be absolute here, and relative positioning must be applied to the parent */
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+h4.neighbors__process--divider span {
+  /* to hide the lines from behind the text, you have to set the background color the same as the container */
+  background: white;
+  padding: 0 15px;
+  font-size: 150%;
+}
+
+img.wireframes {
+  width: 21vw;
+  margin: 1vw;
+}
+
+img.finalscreens {
+  min-width: 75%;
+  border-radius: 20px;
+  margin-bottom: 2vw;
+}
+
+img.finalscreens:nth-child(1) {
+  min-width: 100%;
+  display: inline-block;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 3vw;
+  border-radius: 0;
+}
+
+h4.neighbors__deliverables--divider {
+  position: relative;
+  z-index: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1/5;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
+}
+
+h4.neighbors__deliverables--divider:before {
+  border-top: 2px solid black;
+  content: "";
+  margin: 0 auto;
+  /* this centers the line to the full width specified */
+  position: absolute;
+  /* positioning must be absolute here, and relative positioning must be applied to the parent */
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+h4.neighbors__deliverables--divider span {
+  /* to hide the lines from behind the text, you have to set the background color the same as the container */
+  background: white;
+  padding: 0 15px;
+  font-size: 150%;
+}
+
+p.process {
+  grid-row: auto;
+  font-size: 65%;
+  font-weight: 350;
+}
+
+img.initialemojis {
+  grid-row: auto;
+}
+
+img.newemojis {
+  grid-row: auto;
+}
+
+.emojiswrapper {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+.neighbors__hero {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+  margin-bottom: 2vw;
+}
+
+img.smiley {
+  width: 15vw;
+  margin-left: .5vw;
+  margin-right: .5vw;
+}
+/*# sourceMappingURL=neighbors.css.map */
